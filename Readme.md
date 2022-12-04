@@ -6,15 +6,15 @@ En el siguiente diagrama se muestran los componentes que se utilizan en la aplic
 ```mermaid
 flowchart TD;
     root((main)):::blue;
-    A(GifExpertApp.jsx);
-    B(AddCategory.jsx);
-    C(GifGrid.jsx);
-    D(GifItem.jsx);
-    E([useFetchGifs.js]);
-    F([getGifs.js]);
+    A(GifExpertApp.jsx):::red;
+    B(AddCategory.jsx):::red;
+    C(GifGrid.jsx):::red;
+    D(GifItem.jsx):::red;
+    E([useFetchGifs.js]):::orange;
+    F([getGifs.js]):::orange;
 
     subgraph Components;
-        root===>|Child componente|A:::blue
+        root===>|Child componente|A;
         A====>|Child componente|B & C;
         C==>|Child componente|D;
     end

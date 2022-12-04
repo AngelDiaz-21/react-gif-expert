@@ -1,4 +1,4 @@
-## Gif Expert App
+# Gif Expert App
 Es una aplicación hecha con React y con Vite. Permite realizar una búsqueda de Gifs, esto utilizando la API de Giphy.
 
 En el siguiente diagrama se muestran los componentes que se utilizan en la aplicación así como el hook que se creo y el helper.
@@ -33,6 +33,25 @@ flowchart TD;
 	classDef red  fill:#ed2633,stroke:#000,stroke-width:2px,color:#fff
 	classDef green  fill:#16b522,stroke:#000,stroke-width:2px,color:#fff
 ```
+
+## Scripts
+En el directorio del proyecto, puede ejecutar:
+### `yarn dev`
+Ejecuta la aplicación en el modo de desarrollo.
+Abra [http://localhost:5773](http://127.0.0.1:5173) para verlo en su navegador.
+
+La página se volverá a cargar cuando realice cambios.
+
+También puede utilizar `yarn dev --host` para exponer
+
+### `yarn build` 
+Construye la aplicación para producción en la carpeta `dist`.
+Empaqueta correctamente React en modo de producción y optimiza la compilación para obtener el mejor rendimiento.
+
+La compilación se minimiza y los nombres de archivo incluyen los hashes.
+¡Tu aplicación está lista para ser implementada!
+
+Consulte la sección sobre [deployment](https://facebook.github.io/create-react-app/docs/deployment) para obtener más información.
 
 ## Component main
 En el componente main se importa los estilos así como también el componente hijo ``GifExpertApp``.

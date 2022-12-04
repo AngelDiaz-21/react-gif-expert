@@ -14,16 +14,16 @@ flowchart TD;
     F([getGifs.js]):::orange;
 
     subgraph Components;
-        root===>|Child componente|A;
-        A====>|Child componente|B & C;
-        C==>|Child componente|D;
+        root===>|Child component|A;
+        A====>|Child component|B & C;
+        C==>|Child component|D;
     end
 
     subgraph hooks and helpers
-        C-.Use the hook.->E;
-        E-..->C;
         E-.Make the request.->F;
         F-..->E;
+        C-.Use the hook.->E;
+        E-..->C;
     end
 
     %% Colores %%
